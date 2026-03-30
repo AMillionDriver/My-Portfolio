@@ -6,7 +6,7 @@ on:
   push:
     branches: ["main"]
     paths:
-      - './train-3/'
+      - '../train-3/'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -267,7 +267,7 @@ jobs:
           uses: actions/upload-pages-artifact@v3
           with:
             # Upload entire repository
-            path: './train-3/'
+            path: '../train-3/'
         - name: Deploy to GitHub Pages
           id: deployment
           uses: actions/deploy-pages@v5
